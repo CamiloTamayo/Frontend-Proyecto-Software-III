@@ -11,8 +11,12 @@ import { InicioComponent } from './Componentes/inicio/inicio.component';
 import { LoginComponent } from './Componentes/login/login.component';
 import { LugarComponent } from './Componentes/lugar/lugar.component';
 import { NavbarComponent } from './Componentes/navbar/navbar.component';
-import { RegistroUsuarioComponent } from './Componentes/registro-usuario/registro-usuario.component';
 import { RolComponent } from './Componentes/rol/rol.component';
+import {CookieService} from "ngx-cookie-service";
+import {HttpClientModule} from "@angular/common/http";
+import {RegistroUsuarioComponent} from "./Componentes/registro-usuario/registro-usuario.component";
+import {FormsModule} from "@angular/forms";
+import {DatePipe} from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -30,9 +34,11 @@ import { RolComponent } from './Componentes/rol/rol.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [CookieService, DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

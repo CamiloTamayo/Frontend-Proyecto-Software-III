@@ -1,1 +1,32 @@
-<p>inicio works!</p>
+<div class="container">
+  <h1>Hola</h1>
+  <button class="btn btn-primary" [routerLink]="['/registro']">Crear usuario</button>
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">Cédula</th>
+      <th scope="col">Nombres</th>
+      <th scope="col">Apellidos</th>
+      <th scope="col">Celular</th>
+      <th scope="col">Correo</th>
+      <th scope="col">Direccion</th>
+      <th scope="col">Fecha Nacimiento</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let usuario of lista">
+      <td>{{usuario.cedula}}</td>
+      <td>{{usuario.nombres}}</td>
+      <td>{{usuario.apellidos}}</td>
+      <td>{{usuario.celular}}</td>
+      <td>{{usuario.correo}}</td>
+      <td>{{usuario.direccion}}</td>
+      <td>{{usuario.fecha_nacimiento}}</td>
+      <td>
+        <button class="btn btn-danger" (click)="eliminarUsuario(usuario.cedula)">Eliminar</button>
+        <button class="btn btn-warning">Editar</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,1 +1,43 @@
-<p>registro-usuario works!</p>
+<div class="container">
+  <form>
+    <div class="mb-3">
+      <label for="cedula" class="form-label">Cédula</label>
+      <input type="text" class="form-control" id="cedula" name="cedula" [(ngModel)]="usuarioNuevo.cedula">
+    </div>
+    <div class="mb-3">
+      <label for="nombres" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="nombres" name="nombres" [(ngModel)]="usuarioNuevo.nombres"
+             aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+      <label for="apellidos" class="form-label">Apellido</label>
+      <input type="text" class="form-control" id="apellidos" name="apellidos"
+             [(ngModel)]="usuarioNuevo.apellidos">
+    </div>
+    <div class="mb-3">
+      <label for="celular" class="form-label">Celular</label>
+      <input type="text" class="form-control" id="celular" name="celular" [(ngModel)]="usuarioNuevo.celular">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" name="email" [(ngModel)]="usuarioNuevo.correo">
+    </div>
+
+    <div class="mb-3">
+      <label for="fecha_nacimiento" class="form-label">Fecha de Nacimiento</label>
+      <input type="text" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento"
+             [(ngModel)]="usuarioNuevo.fecha_nacimiento">
+    </div>
+    <div class="mb-3">
+      <label for="direccion" class="form-label">Dirección</label>
+      <input type="text" class="form-control" id="direccion" name="direccion"
+             [(ngModel)]="usuarioNuevo.direccion">
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Contraseña</label>
+      <input type="password" class="form-control" id="password" name="password"
+             [(ngModel)]="usuarioNuevo.password">
+    </div>
+    <button class="btn btn-primary" (click)="agregarUsuario()">Submit</button>
+  </form>
+</div>
