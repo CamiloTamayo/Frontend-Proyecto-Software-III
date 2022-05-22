@@ -35,7 +35,7 @@ export class NavbarComponent{
   }
 
   lugar() {
-    this.router.navigate(['/login']);
+    this.router.navigate(['/lugar']);
   }
 
   controlIngreso() {

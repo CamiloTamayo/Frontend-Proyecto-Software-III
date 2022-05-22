@@ -1,1 +1,42 @@
-<p>lugar works!</p>
+<div class="container">
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">Código</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Direccion</th>
+      <th scope="col">Tipo</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let lugar of listaLugares">
+      <td>{{lugar.codigoLugar}}</td>
+      <td>{{lugar.nombre}}</td>
+      <td>{{lugar.direccion}}</td>
+      <td>{{lugar.tipo}}</td>
+      <td>
+        <button class="btn btn-danger" (click)="eliminarLugar(lugar.codigoLugar)">Eliminar</button>
+        <button class="btn btn-warning">Editar</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <hr>
+  <div class="container">
+    <form>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="lugarNuevo.nombre">
+      </div>
+      <div class="mb-3">
+        <label for="direccion" class="form-label">Direccion</label>
+        <input type="text" class="form-control" id="direccion" name="direccion" [(ngModel)]="lugarNuevo.direccion">
+      </div>
+      <div class="mb-3">
+        <label for="tipo" class="form-label">Tipo</label>
+        <input type="text" class="form-control" id="tipo" name="tipo" [(ngModel)]="lugarNuevo.tipo">
+      </div>
+      <button class="btn btn-primary" (click)="crearLugar()">Submit</button>
+    </form>
+  </div>
+</div>
