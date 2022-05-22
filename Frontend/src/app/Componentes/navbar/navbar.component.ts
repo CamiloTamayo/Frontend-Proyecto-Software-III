@@ -1,15 +1,44 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent{
 
-  constructor() { }
+  constructor(private router:Router) {}
 
-  ngOnInit(): void {
+  inicio() {
+    this.router.navigate(['/inicio']);
   }
 
+  registro() {
+    this.router.navigate(['/registro']);
+  }
+
+  carrera() {
+    this.router.navigate(['/carrera']);
+  }
+
+  rol() {
+    this.router.navigate(['/rol']);
+  }
+
+  login() {
+    this.router.navigate(['/login']);
+  }
+
+  qr() {
+    this.router.navigate(['/qr']);
+  }
+
+  lugar() {
+    this.router.navigate(['/login']);
+  }
+
+  controlIngreso() {
+    this.router.navigate(['/controlIngreso']);
+  }
 }
