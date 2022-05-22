@@ -1,6 +1,7 @@
 import { Component} from '@angular/core';
 import {NgxQrcodeElementTypes, NgxQrcodeErrorCorrectionLevels} from '@techiediaries/ngx-qrcode';
 import {UsuarioService} from "../../Service/UsuarioService/usuario.service";
+import {UsuarioModule} from "../../Module/usuario/usuario.module";
 
 @Component({
   selector: 'app-generar-qr',
@@ -13,9 +14,18 @@ export class GenerarQRComponent{
   value: string = "localhost:4200/ingreso/";
   correctionLevel = NgxQrcodeErrorCorrectionLevels.HIGH;
   token:string = "";
+  cedula:string = "";
+  nombre:string = "";
 
   constructor(private usuarioService:UsuarioService) {
     this.token = this.usuarioService.getToken();
     this.value += this.token;
+    this.usuarioService.getUsuario(this.token).subscribe({
+      next: (result:any) =>{
+        console.log("AAAAAAAAA")
+        this.cedula = result.cedula;
+        this.nombre = result.nombres +" "+ result.apellidos;
+      }
+    })
   }
 }
