@@ -18,7 +18,6 @@ export class LugarService {
   }
 
   saveLugar(lugar:LugarModule):Observable<any>{
-    console.log("CODIGO: "+lugar.codigoLugar)
     return this.http.post(this.url, lugar);
   }
 

@@ -1,1 +1,12 @@
-<p>generar-qr works!</p>
+<h1>Tu codigo QR</h1>
+<br>
+<div class="codigoQR">
+  <ngx-qrcode
+    [elementType]="elementType"
+    [value]="value"
+    [errorCorrectionLevel]="correctionLevel"
+    cssClass="qrCode"
+  >
+  </ngx-qrcode>
+</div>
+

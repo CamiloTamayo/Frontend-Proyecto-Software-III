@@ -6,6 +6,8 @@ import {RegistroUsuarioComponent} from "./Componentes/registro-usuario/registro-
 import {CrearCarreraComponent} from "./Componentes/crear-carrera/crear-carrera.component";
 import {RolComponent} from "./Componentes/rol/rol.component";
 import {LugarComponent} from "./Componentes/lugar/lugar.component";
+import {ControlIngresoComponent} from "./Componentes/control-ingreso/control-ingreso.component";
+import {GenerarQRComponent} from "./Componentes/generar-qr/generar-qr.component";
 
 const routes: Routes = [
   {path:'', redirectTo:'login', pathMatch:'full'},
@@ -16,6 +18,8 @@ const routes: Routes = [
   {path:'carrera', component:CrearCarreraComponent},
   {path:'rol', component:RolComponent},
   {path: 'lugar', component:LugarComponent},
+  {path: 'controlIngreso', component:ControlIngresoComponent},
+  {path:'qr', component:GenerarQRComponent},
 ];
 
 @NgModule({
