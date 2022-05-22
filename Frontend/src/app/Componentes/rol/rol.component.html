@@ -1,1 +1,30 @@
-<p>rol works!</p>
+<div class="container">
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">Código</th>
+      <th scope="col">Nombre</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let rol of listaRoles">
+      <td>{{rol.codigoRol}}</td>
+      <td>{{rol.nombreRol}}</td>
+      <td>
+        <button class="btn btn-danger" (click)="eliminarRol(rol.codigoRol)">Eliminar</button>
+        <button class="btn btn-warning">Editar</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <hr>
+  <div class="container">
+    <form>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="rolNuevo.nombreRol">
+      </div>
+      <button class="btn btn-primary" (click)="crearRol()">Submit</button>
+    </form>
+  </div>
+</div>

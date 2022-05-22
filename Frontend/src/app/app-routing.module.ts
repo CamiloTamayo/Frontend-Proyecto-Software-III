@@ -4,6 +4,7 @@ import {InicioComponent} from "./Componentes/inicio/inicio.component";
 import {LoginComponent} from "./Componentes/login/login.component";
 import {RegistroUsuarioComponent} from "./Componentes/registro-usuario/registro-usuario.component";
 import {CrearCarreraComponent} from "./Componentes/crear-carrera/crear-carrera.component";
+import {RolComponent} from "./Componentes/rol/rol.component";
 
 const routes: Routes = [
   {path:'', redirectTo:'login', pathMatch:'full'},
@@ -11,7 +12,8 @@ const routes: Routes = [
   {path:'login', component:LoginComponent},
   {path:'registro', component:RegistroUsuarioComponent},
   {path: 'login', component:LoginComponent},
-  {path:'carrera', component:CrearCarreraComponent}
+  {path:'carrera', component:CrearCarreraComponent},
+  {path:'rol', component:RolComponent}
 ];
 
 @NgModule({
