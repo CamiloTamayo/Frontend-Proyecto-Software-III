@@ -1,1 +1,12 @@
-<p>ingreso works!</p>
+<div class="container">
+  <div name="usuario" [(ngModel)]="usuario">
+    <h1>Escaneo exitóso!</h1>
+    <p>Cédula: {{usuario.cedula}}</p>
+    <p>Nombre: {{usuario.nombre}}</p>
+    <p>Rol: {{usuario.rol}}</p>
+  </div>
+
+  <form>
+    <button class="btn btn-primary" (click)="volver()">Volver</button>
+  </form>
+</div>

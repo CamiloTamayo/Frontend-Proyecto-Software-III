@@ -8,6 +8,7 @@ import {RolComponent} from "./Componentes/rol/rol.component";
 import {LugarComponent} from "./Componentes/lugar/lugar.component";
 import {ControlIngresoComponent} from "./Componentes/control-ingreso/control-ingreso.component";
 import {GenerarQRComponent} from "./Componentes/generar-qr/generar-qr.component";
+import {IngresoComponent} from "./Componentes/ingreso/ingreso.component";
 
 const routes: Routes = [
   {path:'', redirectTo:'login', pathMatch:'full'},
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: 'lugar', component:LugarComponent},
   {path: 'controlIngreso', component:ControlIngresoComponent},
   {path:'qr', component:GenerarQRComponent},
+  {path: 'ingreso/:cedula/:lugar', component:IngresoComponent},
 ];
 
 @NgModule({
