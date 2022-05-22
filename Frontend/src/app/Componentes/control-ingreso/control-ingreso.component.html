@@ -1,17 +1,1 @@
-<form>
-  <div class="container mt-5">
-    <select class="form-select" [(ngModel)]="lugarSeleccionado" name="lugarSeleccionado" (change)="capturar()">
-      <option value="0" >Selecciona una opción</option>
-      <option *ngFor="let lugar of listaLugares" >{{lugar.nombre}}</option>
-    </select>
-  </div>
-</form>
-<div>
-  <qr-scanner>
-    [debug]="false"
-    [canvasWidth]="1080"
-    [canvasHeight]="720"
-    [stopAfterScan]="true"
-    [updateTime]="500">
-  </qr-scanner>
-</div>
+<p>control-ingreso works!</p>

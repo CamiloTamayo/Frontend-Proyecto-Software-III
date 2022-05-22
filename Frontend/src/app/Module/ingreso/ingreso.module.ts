@@ -1,8 +1,12 @@
-export interface IngresoModule {
-  codigoIngreso:string;
-  fecha:string;
-  lugar:string;
-  usuario:string;
-}
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 
+
+@NgModule({
+  declarations: [],
+  imports: [
+    CommonModule
+  ]
+})
+export class IngresoModule { }

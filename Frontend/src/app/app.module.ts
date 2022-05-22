@@ -18,7 +18,6 @@ import {FormsModule} from "@angular/forms";
 import {DatePipe} from "@angular/common";
 import {GenerarQRComponent} from "./Componentes/generar-qr/generar-qr.component";
 import {NgxQRCodeModule} from "@techiediaries/ngx-qrcode";
-import {NgQrScannerModule} from "angular2-qrscanner";
 
 @NgModule({
   declarations: [
@@ -40,7 +39,6 @@ import {NgQrScannerModule} from "angular2-qrscanner";
     HttpClientModule,
     FormsModule,
     NgxQRCodeModule,
-    NgQrScannerModule
   ],
   providers: [CookieService, DatePipe],
   bootstrap: [AppComponent]
