@@ -1,1 +1,30 @@
-<p>crear-carrera works!</p>
+<div class="container">
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">Código</th>
+      <th scope="col">Nombre</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let carrera of listaCarreras">
+      <td>{{carrera.codigoCarrera}}</td>
+      <td>{{carrera.nombreCarrera}}</td>
+      <td>
+        <button class="btn btn-danger" (click)="eliminarCarrera(carrera.codigoCarrera)">Eliminar</button>
+        <button class="btn btn-warning">Editar</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <hr>
+  <div class="container">
+    <form>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="carreraNueva.nombreCarrera">
+      </div>
+      <button class="btn btn-primary" (click)="crearCarrera()">Submit</button>
+    </form>
+  </div>
+</div>
