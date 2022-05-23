@@ -11,7 +11,7 @@ import {UsuarioModule} from "../../Module/usuario/usuario.module";
 export class GenerarQRComponent{
 
   elementType = NgxQrcodeElementTypes.URL;
-  value: string = "localhost:4200/ingreso/";
+  value: string = "54.82.157.135/ingreso/";
   correctionLevel = NgxQrcodeErrorCorrectionLevels.HIGH;
   token:string = "";
   cedula:string = "";

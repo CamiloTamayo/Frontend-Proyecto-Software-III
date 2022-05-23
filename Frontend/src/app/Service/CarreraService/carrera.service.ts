@@ -8,7 +8,7 @@ import {CarreraModule} from "../../Module/carrera/carrera.module";
 })
 export class CarreraService {
 
-  url = 'http://localhost:8080/api/carreras';
+  url = 'http://54.82.157.135/api/carreras';
   constructor(private http: HttpClient) { }
 
   getCarreras(){

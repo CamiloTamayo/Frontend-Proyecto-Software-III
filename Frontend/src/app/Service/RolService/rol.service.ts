@@ -8,7 +8,7 @@ import {RolModule} from "../../Module/rol/rol.module";
 })
 export class RolService {
 
-  url = 'http://localhost:8080/api/roles';
+  url = 'http://54.82.157.135/api/roles';
   constructor(private http: HttpClient) { }
 
   getRoles():Observable<any>{

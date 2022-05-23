@@ -9,8 +9,8 @@ import {UsuarioModule} from "../../Module/usuario/usuario.module";
 })
 export class UsuarioService {
 
-  url = 'http://localhost:8080/api/usuarios';
-  urlLogin = 'http://localhost:8080/api/login';
+  url = 'http://54.82.157.135/api/usuarios';
+  urlLogin = 'http://54.82.157.135/api/login';
   constructor(private http: HttpClient, private cookies: CookieService) { }
 
   getUsuarios():Observable<any>
