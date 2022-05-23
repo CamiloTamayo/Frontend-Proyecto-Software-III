@@ -45,4 +45,8 @@ export class NavbarComponent{
   ingresoUsuario() {
     this.router.navigate(['/ingreso-usuario']);
   }
+
+  perfilUsuario() {
+    this.router.navigate(['/perfil']);
+  }
 }

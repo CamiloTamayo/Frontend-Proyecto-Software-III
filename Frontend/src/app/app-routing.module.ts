@@ -10,6 +10,7 @@ import {ControlIngresoComponent} from "./Componentes/control-ingreso/control-ing
 import {GenerarQRComponent} from "./Componentes/generar-qr/generar-qr.component";
 import {IngresoComponent} from "./Componentes/ingreso/ingreso.component";
 import {IngresosUsuarioComponent} from "./Componentes/ingresos-usuario/ingresos-usuario.component";
+import {PerfilComponent} from "./Componentes/perfil/perfil.component";
 
 const routes: Routes = [
   {path:'', redirectTo:'login', pathMatch:'full'},
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path:'qr', component:GenerarQRComponent},
   {path: 'ingreso/:cedula/:lugar', component:IngresoComponent},
   {path:'ingreso-usuario', component:IngresosUsuarioComponent},
+  {path:'perfil', component:PerfilComponent}
 ];
 
 @NgModule({
