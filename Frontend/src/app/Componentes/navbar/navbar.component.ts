@@ -41,4 +41,8 @@ export class NavbarComponent{
   controlIngreso() {
     this.router.navigate(['/controlIngreso']);
   }
+
+  ingresoUsuario() {
+    this.router.navigate(['/ingreso-usuario']);
+  }
 }

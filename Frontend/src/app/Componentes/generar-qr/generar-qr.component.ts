@@ -22,7 +22,6 @@ export class GenerarQRComponent{
     this.value += this.token;
     this.usuarioService.getUsuario(this.token).subscribe({
       next: (result:any) =>{
-        console.log("AAAAAAAAA")
         this.cedula = result.cedula;
         this.nombre = result.nombres +" "+ result.apellidos;
       }

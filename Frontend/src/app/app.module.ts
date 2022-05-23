@@ -19,6 +19,8 @@ import {DatePipe} from "@angular/common";
 import {GenerarQRComponent} from "./Componentes/generar-qr/generar-qr.component";
 import {NgxQRCodeModule} from "@techiediaries/ngx-qrcode";
 import {NgQrScannerModule} from "angular2-qrscanner";
+import { IngresosUsuarioComponent } from './Componentes/ingresos-usuario/ingresos-usuario.component';
+import { PerfilComponent } from './Componentes/perfil/perfil.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import {NgQrScannerModule} from "angular2-qrscanner";
     LugarComponent,
     NavbarComponent,
     RegistroUsuarioComponent,
-    RolComponent
+    RolComponent,
+    IngresosUsuarioComponent,
+    PerfilComponent
   ],
   imports: [
     BrowserModule,

@@ -15,6 +15,10 @@ export class IngresoService {
     return this.http.get(this.url);
   }
 
+  getIngresosCedula(cedula:string):Observable<any>{
+    return this.http.get(this.url+'/'+cedula+'-user');
+  }
+
   getIngreso(id:string):Observable<any>{
     return this.http.get(this.url+'/'+id);
   }

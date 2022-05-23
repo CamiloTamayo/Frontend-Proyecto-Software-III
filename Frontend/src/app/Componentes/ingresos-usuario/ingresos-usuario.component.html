@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>Últimos accesos</h1>
+  <p>Aquí podrás visualizar el registro de tus últimos ingresos a la universidad</p>
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">Fecha</th>
+      <th scope="col">Lugar</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let ingreso of listaIngresos">
+      <td>{{ingreso.fecha}}</td>
+      <td>{{ingreso.lugar.nombre}}</td>
+    </tr>
+    </tbody>
+  </table>
+  <hr>
+</div>
