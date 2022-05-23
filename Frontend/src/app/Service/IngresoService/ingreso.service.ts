@@ -7,7 +7,7 @@ import {IngresoModule} from "../../Module/ingreso/ingreso.module";
   providedIn: 'root'
 })
 export class IngresoService {
-  url = 'http://54.82.157.135/api/ingresos';
+  url = 'http://44.200.118.16:8080/api/ingresos';
 
   constructor(private http: HttpClient) { }
 

@@ -21,7 +21,8 @@ export class LoginComponent{
         this.userService.setToken(result.cedula);
         this.router.navigate(['/inicio'])
       },
-      error:(err:any)=>console.log(err)
+      error:(err:any)=>{
+        console.log(err);}
     });
   }
 }
