@@ -9,16 +9,12 @@ import {UsuarioModule} from "../../Module/usuario/usuario.module";
   templateUrl: './registro-usuario.component.html',
   styleUrls: ['./registro-usuario.component.css']
 })
-export class RegistroUsuarioComponent implements OnInit {
+export class RegistroUsuarioComponent{
 
   date = new Date();
 
   usuarioNuevo:UsuarioModule={cedula:'', nombres:'',apellidos:'', fecha_nacimiento:'', direccion:'',correo:'',celular:'',codigo_carrera:'',codigo_rol:'1', password:''};
   constructor(private usuarioService:UsuarioService, private router:Router, public datepipe: DatePipe) { }
-
-  ngOnInit(): void {
-
-  }
 
   agregarUsuario(){
     this.usuarioService.saveUsuario(this.usuarioNuevo).subscribe({

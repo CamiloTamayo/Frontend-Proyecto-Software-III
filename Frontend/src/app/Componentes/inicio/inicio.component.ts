@@ -24,7 +24,7 @@ export class InicioComponent implements OnInit {
 
   eliminarUsuario(cedula:string){
     this.usuarioService.deleteUsuario(cedula).subscribe({
-      next: (result:any) =>{
+      next: () =>{
         this.ngOnInit();
       },
       error:(err:any)=>console.log(err)

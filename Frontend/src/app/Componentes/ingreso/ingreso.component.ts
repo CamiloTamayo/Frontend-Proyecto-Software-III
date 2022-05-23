@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {IngresoService} from "../../Service/IngresoService/ingreso.service";
-import {Router} from "@angular/router";
+import {ActivatedRoute, Router} from "@angular/router";
 import {UsuarioService} from "../../Service/UsuarioService/usuario.service";
 import {LugarService} from "../../Service/LugarService/lugar.service";
-import { ActivatedRoute} from '@angular/router';
 
 
 @Component({

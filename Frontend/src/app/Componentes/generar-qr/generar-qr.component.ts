@@ -1,7 +1,6 @@
 import { Component} from '@angular/core';
 import {NgxQrcodeElementTypes, NgxQrcodeErrorCorrectionLevels} from '@techiediaries/ngx-qrcode';
 import {UsuarioService} from "../../Service/UsuarioService/usuario.service";
-import {UsuarioModule} from "../../Module/usuario/usuario.module";
 
 @Component({
   selector: 'app-generar-qr',
