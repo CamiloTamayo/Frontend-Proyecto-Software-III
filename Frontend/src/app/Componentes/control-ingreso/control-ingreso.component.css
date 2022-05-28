@@ -1,14 +1,14 @@
-.camera-container{
+.camera-container {
   margin: auto;
   margin-top: 50px;
   width: 80%;
 }
 
-select{
+select {
   min-height: 45px;
   cursor: pointer;
 }
 
-select .opcion:hover{
+select .opcion:hover {
   background-color: black;
 }

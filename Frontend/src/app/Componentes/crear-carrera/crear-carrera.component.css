@@ -1,4 +1,4 @@
-.container h1{
+.container h1 {
   margin: 0;
   margin-bottom: 15px;
   font-size: 30px;
@@ -6,20 +6,20 @@
   text-align: center;
 }
 
-.container th{
+.container th {
   font-size: 17px;
 }
 
-.container td{
+.container td {
   vertical-align: middle;
   margin: auto;
 }
 
-.container .hd-buttons{
+.container .hd-buttons {
   width: 10%;
 }
 
-.container .eliminar{
+.container .eliminar {
   display: inline-block;
   width: 100%;
   background: #ea3a3a;
@@ -34,13 +34,13 @@
   transition: all 200ms;
 }
 
-.container .eliminar:hover{
+.container .eliminar:hover {
   background-color: transparent;
   outline: 1px auto #ea3a3a;
   color: #ea3a3a;
 }
 
-.input-text{
+.input-text {
   display: block;
   width: 100%;
   border: 1px solid #ccc;
@@ -49,7 +49,7 @@
   padding: 10px;
 }
 
-.container .crear{
+.container .crear {
   display: inline-block;
   width: 12%;
   background: #64C459;
@@ -64,7 +64,7 @@
   transition: all 200ms;
 }
 
-.container .crear:hover{
+.container .crear:hover {
   background-color: transparent;
   outline: 1px auto #64C459;
   color: #64C459;

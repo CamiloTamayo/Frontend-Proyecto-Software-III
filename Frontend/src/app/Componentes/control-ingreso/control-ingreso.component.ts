@@ -1,4 +1,4 @@
-import {Component, ViewChild, ViewEncapsulation, OnInit, AfterViewInit} from '@angular/core';
+import {Component, ViewChild, ViewEncapsulation, AfterViewInit} from '@angular/core';
 import {QrScannerComponent} from 'angular2-qrscanner';
 import {IngresoService} from "../../Service/IngresoService/ingreso.service";
 import {Router} from "@angular/router";

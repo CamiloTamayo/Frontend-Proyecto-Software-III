@@ -31,7 +31,7 @@ export class IngresoService {
     return this.http.put(this.url+'/'+id, ingreso);
   }
 
-  deleteIngreso(id:String):Observable<any>{
+  deleteIngreso(id:string):Observable<any>{
     return this.http.delete(this.url+'/'+id);
   }
 }

@@ -1,22 +1,25 @@
-.container{
+.container {
   display: flex;
   width: 100%;
   border-bottom: 1px solid #ccc;
   margin-bottom: 30px;
 }
-.container p{
+
+.container p {
   margin: 25px 0px;
   width: 20%;
-  font-size:25px;
+  font-size: 25px;
   font-weight: 500;
   color: #46973c;
   transition: all 200ms;
 }
-.container p:hover{
+
+.container p:hover {
   color: #72d259;
   cursor: pointer;
 }
-.nav-container{
+
+.nav-container {
   display: flex;
   width: 70%;
   margin: auto;
@@ -24,10 +27,12 @@
 
   border-left: 1px solid #ccc;
 }
-.nav-container .nav-item{
+
+.nav-container .nav-item {
   min-width: 10.7%;
 }
-.nav-container .nav-item button{
+
+.nav-container .nav-item button {
   width: 100%;
   border-radius: 0;
   min-height: 60px;
@@ -36,7 +41,8 @@
   border: none;
   font-size: 20px;
 }
-.nav-container .nav-item button:hover{
+
+.nav-container .nav-item button:hover {
   background-color: transparent;
   outline: 1px auto #46973c;
   color: #46973c;

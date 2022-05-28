@@ -1,19 +1,20 @@
-.container h1{
+.container h1 {
   margin-bottom: 5px;
   font-size: 30px;
   font-weight: bold;
   text-align: center;
 }
-.container th{
+
+.container th {
   font-size: 17px;
 }
 
-.container td{
+.container td {
   vertical-align: middle;
   margin: auto;
 }
 
-.container .crear{
+.container .crear {
   display: inline-block;
   width: 12%;
   background: #64C459;
@@ -28,13 +29,13 @@
   transition: all 200ms;
 }
 
-.container .crear:hover{
+.container .crear:hover {
   background-color: transparent;
   outline: 1px auto #64C459;
   color: #64C459;
 }
 
-.container .eliminar{
+.container .eliminar {
   display: inline-block;
   width: 100%;
   background: #ea3a3a;
@@ -49,7 +50,7 @@
   transition: all 200ms;
 }
 
-.container .eliminar:hover{
+.container .eliminar:hover {
   background-color: transparent;
   outline: 1px auto #ea3a3a;
   color: #ea3a3a;
