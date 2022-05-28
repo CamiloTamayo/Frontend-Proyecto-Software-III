@@ -1,4 +1,7 @@
 <div class="container">
+  <h1>
+    Gestión de lugares
+  </h1>
   <table class="table">
     <thead>
     <tr>
@@ -14,9 +17,8 @@
       <td>{{lugar.nombre}}</td>
       <td>{{lugar.direccion}}</td>
       <td>{{lugar.tipo}}</td>
-      <td>
-        <button class="btn btn-danger" (click)="eliminarLugar(lugar.codigoLugar)">Eliminar</button>
-        <button class="btn btn-warning">Editar</button>
+      <td class="hd-buttons">
+        <button class="eliminar" (click)="eliminarLugar(lugar.codigoLugar)">Eliminar</button>
       </td>
     </tr>
     </tbody>
@@ -26,17 +28,17 @@
     <form>
       <div class="mb-3">
         <label for="nombre" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="nombre" name="nombre" [(ngModel)]="lugarNuevo.nombre">
+        <input type="text" class="input-text" id="nombre" name="nombre" [(ngModel)]="lugarNuevo.nombre">
       </div>
       <div class="mb-3">
         <label for="direccion" class="form-label">Direccion</label>
-        <input type="text" class="form-control" id="direccion" name="direccion" [(ngModel)]="lugarNuevo.direccion">
+        <input type="text" class="input-text" id="direccion" name="direccion" [(ngModel)]="lugarNuevo.direccion">
       </div>
       <div class="mb-3">
         <label for="tipo" class="form-label">Tipo</label>
-        <input type="text" class="form-control" id="tipo" name="tipo" [(ngModel)]="lugarNuevo.tipo">
+        <input type="text" class="input-text" id="tipo" name="tipo" [(ngModel)]="lugarNuevo.tipo">
       </div>
-      <button class="btn btn-primary" (click)="crearLugar()">Submit</button>
+      <button class="crear" (click)="crearLugar()">Crear</button>
     </form>
   </div>
 </div>
