@@ -1,6 +1,6 @@
 <div class="container">
-  <h1>Hola</h1>
-  <button class="btn btn-primary" [routerLink]="['/registro']">Crear usuario</button>
+  <h1>Usuarios</h1>
+  <button class="crear" [routerLink]="['/registro']">Crear usuario</button>
   <table class="table">
     <thead>
     <tr>
@@ -23,8 +23,7 @@
       <td>{{usuario.direccion}}</td>
       <td>{{usuario.fecha_nacimiento}}</td>
       <td>
-        <button class="btn btn-danger" (click)="eliminarUsuario(usuario.cedula)">Eliminar</button>
-        <button class="btn btn-warning">Editar</button>
+        <button class="eliminar" (click)="eliminarUsuario(usuario.cedula)">Eliminar</button>
       </td>
     </tr>
     </tbody>

@@ -1,0 +1,56 @@
+.container h1{
+  margin-bottom: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.container th{
+  font-size: 17px;
+}
+
+.container td{
+  vertical-align: middle;
+  margin: auto;
+}
+
+.container .crear{
+  display: inline-block;
+  width: 12%;
+  background: #64C459;
+  color: #fff;
+  margin: 20px 10px 30px 0px;
+  padding: 13px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.container .crear:hover{
+  background-color: transparent;
+  outline: 1px auto #64C459;
+  color: #64C459;
+}
+
+.container .eliminar{
+  display: inline-block;
+  width: 100%;
+  background: #ea3a3a;
+  color: #fff;
+  margin: 20px 10px 5px 0px;
+  padding: 13px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.container .eliminar:hover{
+  background-color: transparent;
+  outline: 1px auto #ea3a3a;
+  color: #ea3a3a;
+}
