@@ -25,4 +25,8 @@ export class LoginComponent{
         console.log(err);}
     });
   }
+
+  registro() {
+    this.router.navigate(['/registro']);
+  }
 }
