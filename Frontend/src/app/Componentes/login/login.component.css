@@ -54,10 +54,11 @@ input[type="checkbox"]{
 
 
 
-button{
+.submit-button{
   display: inline-block;
   width: 100%;
   background: #64C459;
+  color: white;
   margin: 20px 10px 5px 0px;
   padding: 13px;
   border: none;
@@ -68,7 +69,21 @@ button{
   transition: all 200ms;
 }
 
+.submit-button:hover{
+  background-color: transparent;
+  outline: 1px auto #64C459;
+  color: #64C459;
+}
+
 label{
   display: block;
   margin-top: 5px;
+}
+
+.registro{
+  color: #46973c;
+  padding: 0;
+  border: none;
+  background: transparent;
+  text-decoration-line: underline;
 }
