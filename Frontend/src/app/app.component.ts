@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Frontend';
+  constructor(){
+    localStorage.setItem('ip', 'localhost:8080');
+  }
 }

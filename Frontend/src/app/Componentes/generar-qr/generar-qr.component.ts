@@ -10,7 +10,7 @@ import {UsuarioService} from "../../Service/UsuarioService/usuario.service";
 export class GenerarQRComponent{
 
   elementType = NgxQrcodeElementTypes.URL;
-  value: string = "44.200.118.16:8080/ingreso/";
+  value: string = localStorage.getItem('ip')+'/ingreso/';
   correctionLevel = NgxQrcodeErrorCorrectionLevels.HIGH;
   token:string = "";
   cedula:string = "";
