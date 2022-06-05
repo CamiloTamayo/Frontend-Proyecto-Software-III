@@ -8,7 +8,7 @@ import {LugarModule} from "../../Module/lugar/lugar.module";
 })
 export class LugarService {
 
-  url='http://44.200.118.16:8080/api/lugares';
+  url='http://'+localStorage.getItem('ip')+'/api/lugares';
 
   constructor(private http: HttpClient) { }
 
